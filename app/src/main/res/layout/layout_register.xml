@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/registerbackground"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        tools:ignore="UselessParent,Autofill,LabelFor,TextFields,RtlHardcoded,HardcodedText">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:id="@+id/Register_ci_logo"
+            android:src="@drawable/logo"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center" />
+
+        <EditText
+            android:digits="1234567890"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/register_et_account"
+            android:background="@drawable/edittext_shape"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/account"
+            android:drawablePadding="5dp"
+            android:hint="请输入学号"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:inputType="text"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:id="@+id/register_et_verificationCode"
+                android:drawableLeft="@drawable/name"
+                android:background="@drawable/edittext_shape"
+                android:drawablePadding="5dp"
+                android:hint="请输入姓名"
+                android:textSize="15sp"
+                android:singleLine="true"
+                android:inputType="text"/>
+
+        </LinearLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/register_et_password"
+            android:background="@drawable/edittext_shape"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/password"
+            android:drawablePadding="5dp"
+            android:maxLength="16"
+            android:hint="请输入密码(6-16个字符)"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:inputType="text"/>
+        <EditText
+            android:maxLength="16"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/register_et_comfrimPassword"
+            android:background="@drawable/edittext_shape"
+            android:drawablePadding="5dp"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/repeatpassword"
+            android:hint="请确认密码"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:inputType="text"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/register_tv_question1"
+            android:text="请设置密保"
+            android:textSize="20sp"
+            android:gravity="center" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/register_et_phoneNumber"
+            android:background="@drawable/edittext_shape"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/secretguard"
+            android:hint="手机号码"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:inputType="text"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/register_et_juniorName"
+            android:background="@drawable/edittext_shape"
+            android:drawablePadding="5dp"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/secretguard"
+            android:hint="初中班主任名称"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:inputType="text"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/register_et_seniorName"
+            android:background="@drawable/edittext_shape"
+            android:drawablePadding="5dp"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/secretguard"
+            android:hint="高中班主任名称"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:inputType="text"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/register_bt_register"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:text="立即注册"
+            android:textSize="15sp"
+            android:background="#00FFFF"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+</ScrollView>
